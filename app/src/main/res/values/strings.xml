@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyMovie</string>
+    <string name="movies_tab_title">Movies</string>
+    <string name="top_rated_movies_title">Top-Rated</string>
+    <string name="search_movies_title">Search</string>
+    <string name="favorite_movies_title">Favorite</string>
+</resources>
