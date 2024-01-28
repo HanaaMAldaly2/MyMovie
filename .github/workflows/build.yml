@@ -1,0 +1,9 @@
+name: Build App
+on:
+ [pull_request ,workflow_dispatch]
+jobs:
+  build_app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        run: echo "checkout..."
