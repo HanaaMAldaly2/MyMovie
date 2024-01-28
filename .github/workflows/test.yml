@@ -7,4 +7,4 @@ jobs:
     steps:
      - name : first
        run: echo "title start with fix"
-       if: startWith(github.event.pull_request.title,"fix")
+       if: startsWith(github.event.pull_request.title,"fix")
