@@ -1,0 +1,19 @@
+name: Reusable Action
+on:
+  workflow_call:
+    inputs:
+      path:
+        required: true
+        type: string
+    secrets:
+      token:
+        required: true
+jobs:
+  try:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        runs: actions/labeler@v4
+        with:
+          repo_token: ${{secrets.token}}
+          configuration_path: ${{inputs.path}}
