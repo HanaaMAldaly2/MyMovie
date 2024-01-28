@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: First Step
-        runs: actions/labeler@v4
+        uses: actions/labeler@v4
         with:
           repo_token: ${{secrets.token}}
           configuration_path: ${{inputs.path}}
