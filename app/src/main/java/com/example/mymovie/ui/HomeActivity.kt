@@ -20,6 +20,7 @@ import com.example.mymovie.ui.mainscreen.HomeScreen
 import com.example.mymovie.ui.theme.MyMovieTheme
 
 class MainActivity : ComponentActivity() {
+    
     private val viewModel by viewModels<HomeViewModel>() {
         object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
