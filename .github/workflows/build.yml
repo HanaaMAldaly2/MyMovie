@@ -12,5 +12,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 11
+      - name: Grant Gradle permision
+        run : chmod +x gradlew    
       - name: Run Gradle  
         run: ./gradlew build
