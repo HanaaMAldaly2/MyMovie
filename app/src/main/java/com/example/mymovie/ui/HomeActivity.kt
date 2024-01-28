@@ -24,6 +24,7 @@ class MainActivity : ComponentActivity() {
         object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
                 val repo = MoviesRepositoryImpl()
+                
                 val favoriteMoviesRepo =
                     FavoriteMoviesRepoImpl(MovieDatabaseBuilder.getInstance(this@MainActivity))
                 return HomeViewModel(
