@@ -16,3 +16,9 @@ jobs:
         run : chmod +x gradlew    
       - name: Run Gradle  
         run: ./gradlew build
+  test_job:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Print
+      run: echo "i'm just printint"
+   
