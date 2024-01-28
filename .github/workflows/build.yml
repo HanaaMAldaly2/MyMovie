@@ -5,5 +5,12 @@ jobs:
   build_app:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        run: echo "checkout..."
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup JDK  
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 11
+      - name: Run Gradle  
+        run: ./gradlew build
