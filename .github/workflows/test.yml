@@ -1,0 +1,10 @@
+name: Test
+on: 
+  [workflow_dispatch, pull_request]
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+     - name : first
+       run: echo "title start with fix"
+       if: startWith(github.event.pull_request.title,"fix")
